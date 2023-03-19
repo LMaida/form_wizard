@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(206, 94%, 87%);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+input {
+  outline: none;
+  border: 1px solid hsl(229, 24%, 87%);
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.card-title {
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+}
+
+.card-text {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.8rem;
+}
+
+.border-purple {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.message-plan {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  text-align: center;
+  padding: 0.5rem 3rem;
+  color: hsl(357, 88%, 45%);
+  border: 1px solid hsl(357, 88%, 45%);
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.message-plan.error {
+  visibility: visible;
+  opacity: 1;
+}
+
+.step-four-form .step-four-cards {
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 10px;
+  padding: 1.2rem;
+}
+.step-four-form .step-four-cards .card {
+  display: flex;
+  justify-content: space-between;
+}
+.step-four-form .step-four-cards .card-selected-plan {
+  border-bottom: 1px solid hsl(229, 24%, 87%);
+  padding-bottom: 0.8rem;
+}
+.step-four-form .step-four-cards .card-selected-plan .card-content {
+  display: flex;
+  flex-direction: column;
+}
+.step-four-form .step-four-cards .card-selected-plan .card-content .selected-plan {
+  font-size: 200;
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+  cursor: pointer;
+}
+.step-four-form .step-four-cards .card-selected-plan .card-content .change-plan {
+  font-size: 0.8rem;
+  color: hsl(231, 11%, 63%);
+}
+.step-four-form .step-four-cards .card-selected-plan .card-content .change-plan:hover {
+  color: hsl(243, 100%, 62%);
+}
+.step-four-form .step-four-cards .card-selected-plan .card-content .card-price {
+  color: hsl(213, 96%, 18%);
+  font-size: 200;
+  font-weight: 600;
+}
+.step-four-form .step-four-cards .checked-add-ons {
+  margin-top: 15px;
+}
+.step-four-form .step-four-cards .checked-add-ons .add-ons-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.step-four-form .step-four-cards .checked-add-ons .add-ons-content .check-add-ons {
+  color: hsl(231, 11%, 63%);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.step-four-form .step-four-cards .checked-add-ons .card-price {
+  font-size: 0.8rem;
+  color: hsl(213, 96%, 18%);
+}
+.step-four-form .card-total-amount .card-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+.step-four-form .card-total-amount .card-content .card-price {
+  color: hsl(243, 100%, 62%);
+  font-weight: 600;
+}/*# sourceMappingURL=step-four.css.map */

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form-wizard.css">
+
+    <title>Multi-Step form</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-container">
+           <div class="steps-container">
+                <img src="images/bg-sidebar-desktop.svg" class="image steps-bcg">
+                <div class="steps">
+                    <button class="btn-step step-1 active-state" id="step-1">
+                        <div class="step-circle">
+                            <span>1</span>
+                            <span class="tooltip test">YOUR INFO</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">STEP 1</span>
+                            <span class="step-name">YOUR INFO</span>
+                        </div>
+                    </button>
+                    <button class="btn-step step-2" id="step-2">
+                        <div class="step-circle">
+                            <span>2</span>
+                            <span class="tooltip">SELECT PLAN</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">STEP 2</span>
+                            <span class="step-name">SELECT PLAN</span>
+                        </div>
+                    </button>
+                    <button class="btn-step step-3" id="step-3">
+                        <div class="step-circle">
+                            <span>3</span>
+                            <span class="tooltip">ADD-ONS</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">STEP 3</span>
+                            <span class="step-name">ADD-ONS</span>
+                        </div>
+                    </button>
+                    <button class="btn-step step-4" id="step-4">
+                        <div class="step-circle">
+                            <span>4</span>
+                            <span class="tooltip">SUMMARY</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">STEP 4</span>
+                            <span class="step-name">SUMMARY</span>
+                        </div>
+                    </button>
+                </div>
+           </div>
+           <div class="form-content" id="form-content">
+                <div class="form-header">
+                    <h1 class="form-title">Personal Info</h1>
+                    <h2 class="form-sub-title">Please provide your name, email address, and phone number.</h2>
+                </div>
+                <form class="form step-one-form" id="form-info">
+                    <div class="form-control name">
+                        <div class="label-message-container">
+                            <label for="name">Name</label>
+                            <span class="message">This field is required</span>
+                        </div>
+                        <input type="text" class="input" id="name" placeholder="e.g. Stephen King">
+                    </div>
+                    <div class="form-control emaill">
+                        <div class="label-message-container">
+                            <label for="email">Email Address</label>
+                            <span class="message">This field is required</span>
+                        </div>
+                        <input type="text" class="input" id="email" placeholder="e.g. stephenking@lorem.com">
+                    </div>
+                    <div class="form-control phone-numberl">
+                        <div class="label-message-container">
+                            <label for="phone-numberl">Phone Number</label>
+                            <span class="message">This field is required</span>
+                        </div>
+                        <input type="text" class="input" id="address" placeholder="e.g. +1 234 567 890">
+                    </div>
+                    <span class="message-plan">Plan selection required</span>
+                </form>
+                <div class="form-footer">
+                    <button class="btn-next-step form-submit" id="next-step-2">Next Step</button>
+                </div>
+           </div>
+    </div>
+
+    <script src="js/validation.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/step-one.js"></script>
+    <script src="js/step-two.js"></script>
+    <script src="js/step-three.js"></script>
+    <script src="js/step-four.js"></script>
+</body>
+
+</html>

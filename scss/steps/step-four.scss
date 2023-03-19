@@ -1,0 +1,88 @@
+@import "../global";
+
+
+
+.step-four-form {
+
+    .step-four-cards {
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $magnolia;
+        border-radius: 10px;
+        padding: 1.2rem;
+            
+        .card {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-selected-plan {
+            border-bottom: 1px solid $lightGray;
+            padding-bottom: 0.8rem;
+
+            .card-content {
+                display: flex;
+                flex-direction: column;
+
+                .selected-plan {
+                    font-size: $normal;
+                    color: $marineBlue;
+                    font-weight: $bolder ;
+                    cursor: pointer;
+                }
+    
+                .change-plan {
+                    font-size: $small;
+                    color: $coolGray;
+    
+                    &:hover {
+                        color: $purplish;
+                    }
+                }
+    
+                .card-price {
+                    color: $marineBlue;
+                    font-size: $normal;
+                    font-weight: $bolder;
+                }
+            }
+        }
+
+        .checked-add-ons {
+            margin-top: 15px;
+
+            .add-ons-content {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .check-add-ons {
+                     color: $coolGray;
+                     font-weight: $bold;
+                     font-size: $small;
+                 }
+            }
+
+            .card-price {
+                font-size: $small;
+                color: $marineBlue;
+            }
+        }
+    }
+
+    .card-total-amount {
+
+        .card-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            padding: 0 1rem;
+
+            .card-price {
+                color: $purplish;
+                font-weight: $bolder;
+            }
+        }
+    }
+}

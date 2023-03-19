@@ -1,0 +1,59 @@
+@import "../global";
+
+
+
+.step-three-form {
+
+    .step-three-cards{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        margin-top: 1rem;
+
+        .step-three-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: $small;
+            border: 1px solid $coolGray;
+            padding: 1rem;
+            border-radius: 10px;
+
+            .card-content {
+                display: flex;
+                align-items: center;
+
+                .addon-checkbox {
+                    width: 15px;
+                    height: 15px;
+                }
+
+            .about-add-ons {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 10px;
+            }
+        }
+
+            .card-price {
+                color: $purplish;
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 890px) {
+    
+    .step-three-card {
+
+        .card-content {
+
+            .check-box {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}

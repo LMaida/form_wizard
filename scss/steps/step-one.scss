@@ -1,0 +1,78 @@
+@import "../global";
+
+
+
+.step-one-form {
+
+    .form-control {
+
+        .label-message-container {
+            display: flex;
+            justify-content: space-between;
+
+            .message {
+                font-size: $small;
+                color: $red;
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .input:hover {
+            border: 1px solid $purplish;
+            cursor: pointer;
+        }
+    }
+
+    .form-control.error {
+
+        .label-message-container {
+
+            .message {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .input {
+            border: 1px solid $red;
+        }
+    }
+}
+
+@media  screen and (max-width: 890px) {
+    
+    .form-control {
+        width: 100%;
+
+        input {
+           width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .form-control {
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) { 
+
+    .form-control {
+        width: 100%;
+
+        input {
+           width: 100%;
+        }
+    }
+}
